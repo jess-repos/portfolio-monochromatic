@@ -6,8 +6,8 @@ import Tab from "../z-ui/Tab";
 
 import { useState, useEffect } from "react";
 
-const Portfolio = ({ projects, projectsTabs }) => {
-  const tabs = ["all", ...projectsTabs];
+const Portfolio = ({ projects }) => {
+  const tabs = ["all", "analytics", "development"];
 
   const [activeTab, setActiveTab] = useState("all");
   const [selected, setSelected] = useState(projects);
