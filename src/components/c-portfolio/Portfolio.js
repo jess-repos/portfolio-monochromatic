@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const Portfolio = ({ projects, projectsTabs }) => {
   const tabs = ["all", ...projectsTabs];
 
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+  const [activeTab, setActiveTab] = useState("all");
   const [selected, setSelected] = useState(projects);
 
   useEffect(() => {
