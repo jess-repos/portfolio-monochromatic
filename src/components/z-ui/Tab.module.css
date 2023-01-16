@@ -5,6 +5,7 @@
 }
 .tab li {
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .tab .active {

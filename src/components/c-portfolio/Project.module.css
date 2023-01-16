@@ -1,13 +1,12 @@
 .project {
   position: relative;
   padding: 0;
-  width: 100%;
-  margin-bottom: 16px;
   overflow: hidden;
 }
 .project img {
   display: block;
   width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 .project .overlay {

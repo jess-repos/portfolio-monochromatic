@@ -5,7 +5,7 @@ import Portfolio from "../components/c-portfolio/Portfolio";
 import Skills from "../components/d-skills/Skills";
 import projectsData from "../../data/projects.json";
 
-const HomePage = ({ projects }) => {
+const HomePage = ({ projects, projectsTabs }) => {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ const HomePage = ({ projects }) => {
 
       <Navigation />
       <Home />
-      <Portfolio projects={projects} />
+      <Portfolio projects={projects} projectsTabs={projectsTabs} />
       <Skills />
     </>
   );
@@ -37,9 +37,13 @@ export const getStaticProps = async (context) => {
   const res = await fetch(`${apiURL}/api/projects`);
   const projects = await res.json();
 
+  const projectsTabs = [...new Set(projects.map((project) => project.type.toLowerCase()))];
+  console.log(projectsTabs);
+
   return {
     props: {
       projects,
+      projectsTabs,
     },
   };
 };
