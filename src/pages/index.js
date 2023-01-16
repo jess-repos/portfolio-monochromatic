@@ -22,8 +22,10 @@ const HomePage = ({ projects }) => {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/projects`);
-  const projects = await res.json();
+  // const res = await fetch(`http://localhost:3000/api/projects`);
+  // const projects = await res.json();
+
+  const projects = []
 
   return {
     props: {
