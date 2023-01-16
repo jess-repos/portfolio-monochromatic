@@ -1,0 +1,49 @@
+.home {
+  min-height: 720px;
+  background-image: url("/images/landing-page-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 552px; */
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  max-width: 576px;
+}
+.intro .icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 24px auto;
+  background-color: var(--color-primary);
+  clip-path: polygon(
+    0 36%,
+    32% 0,
+    50% 48%,
+    68% 0,
+    100% 36%,
+    84% 100%,
+    76% 72%,
+    50% 100%,
+    24% 72%,
+    16% 100%
+  );
+}
+.intro h4 {
+  font-size: 48px;
+  text-align: center !important;
+}
+.intro p {
+  margin-top: 16px;
+  color: var(--color-light-2);
+  margin-bottom: 24px;
+  text-align: center;
+}
+.intro .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

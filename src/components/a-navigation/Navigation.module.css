@@ -1,0 +1,103 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-dark);
+  z-index: 10000;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+.logo span {
+  width: 32px;
+  height: 32px;
+  clip-path: polygon(
+    0 36%,
+    32% 0,
+    50% 48%,
+    68% 0,
+    100% 36%,
+    84% 100%,
+    76% 72%,
+    50% 100%,
+    24% 72%,
+    16% 100%
+  );
+  background-color: var(--color-primary);
+}
+
+.items {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+.items .highlight a {
+  color: var(--color-primary) !important;
+}
+.items li a {
+  border-bottom: 1px solid transparent;
+  letter-spacing: 1px;
+}
+.items li a:hover {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.burger {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+.burger > * {
+  background-color: var(--color-primary);
+  width: 22px;
+  height: 4px;
+  position: absolute;
+}
+
+.line1 {
+  top: 0;
+}
+.line2 {
+  top: 9px;
+}
+.line3 {
+  top: 18px;
+}
+
+.toggle .line2 {
+  transform: translateX(-4px);
+}
+.toggle .line3 {
+  transform: translateX(-8px);
+}
+
+@media only screen and (max-width: 720px) {
+  .burger {
+    display: block;
+  }
+  .items {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+  }
+  .items.toggle {
+    transform: translateX(0%);
+  }
+}

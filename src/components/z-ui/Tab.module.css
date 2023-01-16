@@ -1,0 +1,12 @@
+.tab {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+.tab li {
+  cursor: pointer;
+}
+
+.tab .active {
+  border-bottom: 1px solid var(--color-primary);
+}
