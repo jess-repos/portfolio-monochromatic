@@ -26,7 +26,7 @@ const Portfolio = ({ projects }) => {
         <Title>Portfolio</Title>
         <Tab tabs={tabs} active={activeTab} onChange={setActiveTab} />
       </header>
-
+      <h1>{activeTab}</h1>
       <div className={classes.projects}>
         {selected.map((project, index) => (
           <Project project={project} key={index} />
