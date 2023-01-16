@@ -3,6 +3,7 @@ import Navigation from "../components/a-navigation/Navigation";
 import Home from "../components/b-home/Home";
 import Portfolio from "../components/c-portfolio/Portfolio";
 import Skills from "../components/d-skills/Skills";
+import projectsData from "../../data/projects.json";
 
 const HomePage = ({ projects }) => {
   return (
@@ -21,11 +22,20 @@ const HomePage = ({ projects }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  // const res = await fetch(`http://localhost:3000/api/projects`);
-  // const projects = await res.json();
+export const getStaticProps = async (context) => {
+  // const projects = projectsData;
 
-  const projects = []
+  let apiURL;
+
+  if (process.env.NODE_ENV === "production") {
+    apiURL = process.env.BASE_URL_PRODUCTION;
+  } else {
+    apiURL = process.env.BASE_URL_DEVELOPMENT;
+  }
+  console.log(apiURL);
+
+  const res = await fetch(`${apiURL}/api/projects`);
+  const projects = await res.json();
 
   return {
     props: {
