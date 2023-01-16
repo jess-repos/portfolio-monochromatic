@@ -37,7 +37,7 @@ export const getStaticProps = async (context) => {
   const res = await fetch(`${apiURL}/api/projects`);
   const projects = await res.json();
 
-  const projectsTabs = [...new Set(projects.map((project) => project.type.toLowerCase()))];
+  const projectsTabs = [...new Set(projects.map((project) => project.type))];
   console.log(projectsTabs);
 
   return {

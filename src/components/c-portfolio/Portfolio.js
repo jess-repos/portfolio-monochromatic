@@ -16,9 +16,7 @@ const Portfolio = ({ projects, projectsTabs }) => {
     if (activeTab === "all") {
       setSelected(projects);
     } else {
-      setSelected(
-        projects.filter((project) => project.type.toLowerCase() === activeTab)
-      );
+      setSelected(projects.filter((project) => project.type === activeTab));
     }
   }, [activeTab]);
 

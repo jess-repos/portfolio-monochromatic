@@ -4,7 +4,7 @@
     "title": "Project 1",
     "description": "Description of project 1",
     "imageUrl": "/images/img_1.jpg",
-    "type": "Development"
+    "type": "development"
   },
   {
     "id": 2,
@@ -25,21 +25,21 @@
     "title": "Project 4",
     "description": "Description of project 4",
     "imageUrl": "/images/img_4.jpg",
-    "type": "Development"
+    "type": "development"
   },
   {
     "id": 5,
     "title": "Project 5",
     "description": "Description of project 5",
     "imageUrl": "/images/img_5.jpg",
-    "type": "Development"
+    "type": "development"
   },
   {
     "id": 6,
     "title": "Project 6",
     "description": "Description of project 6",
     "imageUrl": "/images/img_6.jpg",
-    "type": "Analytics"
+    "type": "dnalytics"
   },
   {
     "id": 7,
