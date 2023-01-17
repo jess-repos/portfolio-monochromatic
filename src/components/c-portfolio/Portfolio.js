@@ -7,12 +7,13 @@ import Tab from "../z-ui/Tab";
 import { useState, useEffect } from "react";
 
 const Portfolio = ({ projects }) => {
-  const tabs = ["all", "analytics", "development"];
+  const tabs = ["all", "development", "analytics"];
 
   const [activeTab, setActiveTab] = useState("all");
   const [selected, setSelected] = useState(projects);
 
   useEffect(() => {
+    console.log(activeTab);
     if (activeTab === "all") {
       setSelected(projects);
     } else {
@@ -26,7 +27,6 @@ const Portfolio = ({ projects }) => {
         <Title>Portfolio</Title>
         <Tab tabs={tabs} active={activeTab} onChange={setActiveTab} />
       </header>
-      <h1>{activeTab}</h1>
       <div className={classes.projects}>
         {selected.map((project, index) => (
           <Project project={project} key={index} />

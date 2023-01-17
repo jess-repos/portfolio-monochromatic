@@ -7,7 +7,7 @@
   --color-light-2: rgb(200, 200, 200);
   --color-light-hover: rgb(178, 178, 178);
   --color-primary: rgb(221, 169, 255);
-  --color-primary-overlay: rgba(221, 169, 255, 0.75);
+  --color-primary-overlay: rgba(221, 169, 255, 0.2);
   --color-primary-hover: rgb(178, 141, 202);
 }
 

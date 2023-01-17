@@ -4,83 +4,107 @@
     "title": "Project 1",
     "description": "Description of project 1",
     "imageUrl": "/images/img_1.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 2,
     "title": "Project 2",
     "description": "Description of project 2",
     "imageUrl": "/images/img_2.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 3,
     "title": "Project 3",
     "description": "Description of project 3",
     "imageUrl": "/images/img_3.jpg",
-    "type": "analytics"
+    "type": "analytics",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 4,
     "title": "Project 4",
     "description": "Description of project 4",
     "imageUrl": "/images/img_4.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 5,
     "title": "Project 5",
     "description": "Description of project 5",
     "imageUrl": "/images/img_5.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 6,
     "title": "Project 6",
     "description": "Description of project 6",
     "imageUrl": "/images/img_6.jpg",
-    "type": "analytics"
+    "type": "analytics",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 7,
     "title": "Project 7",
     "description": "Description of project 7",
     "imageUrl": "/images/img_7.jpg",
-    "type": "analytics"
+    "type": "analytics",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 8,
     "title": "Project 8",
     "description": "Description of project 8",
     "imageUrl": "/images/img_8.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 9,
     "title": "Project 9",
     "description": "Description of project 9",
     "imageUrl": "/images/img_9.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 10,
     "title": "Project 10",
     "description": "Description of project 10",
     "imageUrl": "/images/img_10.jpg",
-    "type": "analytics"
+    "type": "analytics",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 11,
     "title": "Project 11",
     "description": "Description of project 11",
     "imageUrl": "/images/img_11.jpg",
-    "type": "development"
+    "type": "development",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   },
   {
     "id": 12,
     "title": "Project 12",
     "description": "Description of project 12",
     "imageUrl": "/images/img_12.jpg",
-    "type": "analytics"
+    "type": "analytics",
+    "liveUrl": "https://www.google.com",
+    "githubUrl": "https://www.github.com"
   }
 ]

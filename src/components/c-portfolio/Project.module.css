@@ -9,7 +9,8 @@
   height: 400px;
   object-fit: cover;
 }
-.project .overlay {
+
+.overlay {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -17,11 +18,6 @@
   bottom: 0;
   left: 0;
   background-color: var(--color-dark-overlay);
-}
-.project:hover .overlay {
-  opacity: 1;
-}
-.overlay {
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -30,7 +26,29 @@
 .overlay span {
   font-weight: 300;
   color: var(--color-primary);
+  text-shadow: 0 0 4px var(--color-dark);
 }
 .overlay p {
   color: var(--color-light);
+  margin-top: 16px;
+  text-shadow: 0 0 4px var(--color-dark);
+}
+.overlay .cta {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.project .filter {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary-overlay);
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+.project:hover .filter {
+  opacity: 0;
 }

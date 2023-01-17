@@ -8,7 +8,7 @@
 
 .primary {
   background-color: var(--color-primary);
-  border-radius: 32px;
+  /* border-radius: 32px; */
   color: var(--color-dark);
 }
 .primary:hover {
